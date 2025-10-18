@@ -1,14 +1,19 @@
-import './App.css'
+import { FilterControls } from "./components/FilterControls"
+import { Pagination } from "./components/Pagination";
+import { ProductCard } from "./components/ProductCard"
+import { SearchBar } from "./components/SearchBar"
 
 function App() {
-
   return (
-    <>
-  <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </>
-  )
+   <>
+          <SearchBar/>
+          <FilterControls />
+          <ProductCard/>
+          <Pagination/>
+   </>
+
+
+  );
 }
 
-export default App
+export default App;
